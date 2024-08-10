@@ -1,0 +1,7 @@
+export let agentes = "https://valorant-api.com/v1/agents"
+export let armas = "https://valorant-api.com/v1/weapons"
+export let aerosoles = "https://valorant-api.com/v1/sprays"
+export let mapas = "https://valorant-api.com/v1/maps"
+export let Gamemodes = "https://valorant-api.com/v1/gamemodes"
+export let monedas = "https://valorant-api.com/v1/monedas"
+export let Paquetes = "https://valorant-api.com/v1/bundles"
