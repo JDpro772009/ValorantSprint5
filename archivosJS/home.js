@@ -1,5 +1,5 @@
 
-import {agentes,mapas,armas,Ranked} from "./Apis.js"
+import {agentes,mapas,armas,Ranked,menuDesp} from "./Apis.js"
 
 let Direc = agentes
 
@@ -70,13 +70,5 @@ let app = createApp({
 }).mount("#app")
 
 let boton = document.querySelector(".lista-desplegable")
-function menuDesp(){
-    let menu = document.querySelector(".menu-desplegable")
-    let menuTotal = document.querySelector(".menu-total")
-    
-    menu.classList.toggle("left-0-menu")
-    menuTotal.classList.toggle("left-0-menu-total")
-    
 
-}
 boton.addEventListener("click", menuDesp)

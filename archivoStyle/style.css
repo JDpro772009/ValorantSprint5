@@ -182,17 +182,70 @@ width: 100%;
     border-top:1px solid #444444;
     border-bottom:1px solid #444444;
 }
-.left-0-menu{
-  margin-left: -45%;
+.cartas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 80vh;
 }
-.left-0-menu-total{
-  margin-left: -15%;
+.maps{
+  max-width: 15rem;
+
 }
+.favoritos{
+  border: 3px solid gold;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: gold;
+  display: flex;
+  flex-flow: row wrap;
+}
+.estrella{
+  border: 2px solid gold;
+  border-radius: 20px;
+  color: gold;
+  background-color: #2b2a2a;
+}
+.cartaMaps h5{
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  transition: all .4s;
+}
+.cartaMaps{
+  padding: 1rem;
+  background-color: #2b2a2a;
+  margin: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.cartaMaps:hover{
+  border: 2px solid #ee154b;
+  
+}
+.cartaMaps:hover .nombreMap{
+  background-color: #ee154b;
+  
+}
+.cartaMaps:hover .maps{
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  
+}
+.main2{
+  min-height: 100vh;
+}
+.linksCaj{
+  width: 100%;
+}
+
 .menu-total{
+
    z-index: 1000;
-    width: 60vh;
+
     display: inline-flex;
-    height: 20%;
+
     flex-flow: row nowrap;
     left: 0;
     height: 100%;
@@ -395,7 +448,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -51%;
+    margin-left: -74%;
   }
 }
 @media ( min-width: 375px) {
@@ -403,7 +456,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -45%;
+    margin-left: -63%;
   }
 }
 @media ( min-width: 425px) {
@@ -411,7 +464,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -39%;
+    margin-left: -55%;
   }
 }
 @media ( min-width: 768px) {
@@ -419,7 +472,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -22%;
+    margin-left: -30.5%;
   }
 
 }
@@ -428,7 +481,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -21.5%;
+    margin-left: -22.8%;
   }
 
 }
@@ -437,7 +490,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -15%;
+    margin-left: -18.5%;
   }
 
 }
@@ -447,7 +500,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -17.5%;
+    margin-left: -16.5%;
     
   }
   
