@@ -7,6 +7,21 @@ main{
       flex-wrap: wrap;
 
 }
+body::-webkit-scrollbar {
+  width: 10px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: #333333;    
+  padding: 2px;  
+}
+
+body::-webkit-scrollbar-thumb {
+
+  background-color: #ee154b;   
+  border-radius: 20px;      
+  border: 2px solid #de3660;  
+}
 footer{
   background-color: #333333;
   display: flex;
@@ -21,8 +36,12 @@ nav{
     border-bottom: 4px solid #ee154b;
     height: 5rem;
     display: flex;
-
-    
+}
+.imagenes img{
+  transition: all 0.4s;
+}
+.imagenes img:hover{
+  transform: translateY(-8px);
 }
 nav>a{
   width: 100%;
@@ -450,6 +469,7 @@ h1{
   .left-0-menu-total{
     margin-left: -74%;
   }
+ 
 }
 @media ( min-width: 375px) {
   .menu-total{
@@ -458,6 +478,7 @@ h1{
   .left-0-menu-total{
     margin-left: -63%;
   }
+
 }
 @media ( min-width: 425px) {
   .menu-total{
@@ -474,6 +495,7 @@ h1{
   .left-0-menu-total{
     margin-left: -30.5%;
   }
+
 
 }
 @media ( min-width: 1024px) {
@@ -518,7 +540,8 @@ h1{
 
 footer ul {
   display: flex;
-  margin: 2.1rem;
+  margin-top: 2.6rem;
+  margin-left: 4.6rem;
   transform: translate(-50%, -50%);
 }
 nav>a>img{
