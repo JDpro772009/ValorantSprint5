@@ -1,5 +1,6 @@
 const {createApp} = Vue
 let urlApi = "https://valorant-api.com/v1/weapons"
+import {menuDesp} from "./Apis.js"
 
 /* 
 fetch(urlApi).then(response => response.json()).then(data => {
@@ -62,3 +63,6 @@ const app = createApp({
 
 }).mount('#app')
 
+let boton = document.querySelector(".lista-desplegable")
+
+boton.addEventListener("click", menuDesp)
