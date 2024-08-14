@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="../archivoStyle/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+              <a href="./home.html"><img src="../RecursosExt/valorant-logo-freelogovectors.net_.png" alt=""></a>
+
+          </nav>
+          
+    </header>
+    <div class="menu-total left-0-menu-total">
+      <div class="menu-desplegable left-0-menu">
+              <a class="nav-link ov-btn-slide-left text-light" href="./home.html"><img src="../RecursosExt/1-removebg-preview.png" alt="" class="logos-menu">Home</a>
+
+             <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/2-removebg-preview.png" alt="" class="logos-menu">Personajes</a>
+ 
+             <a class="nav-link ov-btn-slide-left text-light" href="./mapas.html"><img src="../RecursosExt/3-removebg-preview.png" alt="" class="logos-menu">Mapas</a>
+ 
+             <a class="nav-link ov-btn-slide-left text-light" href="./armas.html"><img src="../RecursosExt/4-removebg-preview.png" alt="" class="logos-menu">Armas</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="./stats2.html"><img src="../RecursosExt/5-removebg-preview.png" alt="" class="logos-menu">Rangos</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/6-removebg-preview.png" alt="" class="logos-menu">Gamemodes</a>
+ 
+ 
+      </div>
+             <button class="text-light lista-desplegable">⮞</button>
+         </div>
+
+
+
+    <main id="app">
+      <div class="container">
+        <div class="card mx-auto py-4 my-5 weapon-card col-md-6">
+          <img :src="armaDetalles.displayIcon" class="card-img-top img-fluid" alt="Imagen del arma">
+          <div class="card-body text-white">
+            <h2 class="card-title text-center">{{ armaDetalles.displayName }}</h2>
+            <p class="card-text text-center">Categoría: {{ armaDetalles.category }}</p>
+      
+            <div class="stats-container px-5 mt-3">
+              <div v-if="armaDetalles.weaponStats">
+                <p>CARGADOR: {{ armaDetalles.weaponStats.magazineSize }}</p>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-warning" role="progressbar" :style="{ width: armaDetalles.weaponStats.magazineSize / 150 * 100 + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="150">{{ armaDetalles.weaponStats.magazineSize }}</div>
+                </div>
+      
+                <p>VELOCIDAD DE DISPARO: {{ armaDetalles.weaponStats.fireRate }}</p>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-warning" role="progressbar" :style="{ width: armaDetalles.weaponStats.fireRate / 100 * 100 + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">{{ armaDetalles.weaponStats.fireRate }}</div>
+                </div>
+      
+                <p>TIEMPO PARA EQUIPAR: {{ armaDetalles.weaponStats.equipTimeSeconds }} s</p>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-warning" role="progressbar" :style="{ width: armaDetalles.weaponStats.equipTimeSeconds / 5 * 100 + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">{{ armaDetalles.weaponStats.equipTimeSeconds }} s</div>
+                </div>
+      
+                <p>TIEMPO DE RECARGA: {{ armaDetalles.weaponStats.reloadTimeSeconds }} s</p>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-warning" role="progressbar" :style="{ width: armaDetalles.weaponStats.reloadTimeSeconds / 5 * 100 + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">{{ armaDetalles.weaponStats.reloadTimeSeconds }} s</div>
+                </div>
+              </div>
+              <div v-else>
+                <p>Estadísticas no disponibles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+      <div class="container">
+        <div id="skinsCarousel" class="carousel slide col-md-5 h-auto mt-4 mx-auto" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div v-for="(skin, index) in armaDetalles.skins" :class="['carousel-item', { active: index === 0 }]">
+                    <img :src="skin.displayIcon" class="d-block img-fluid" alt="Skin Image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ skin.displayName }}</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#skinsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#skinsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+      
+      
+           
+       
+        
+    </main>
+    
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../archivosJs/armasDetalles.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

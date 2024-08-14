@@ -1588,7 +1588,7 @@ background: #0077b5;
   /* ===========armadetalles========== */
   
   .weapon-card {
-    background: url('../RecursosExt/v') center/cover no-repeat;
+    background: url('../RecursosExt/VALORANT_Logo_V_thumbnail.jpg') center/cover no-repeat;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     width: 80%;
@@ -1597,8 +1597,8 @@ background: #0077b5;
     }
     
     .weapon-card .card-img-top {
-    max-height: 40%;
-    object-fit: cover;
+    max-height: 150px;
+    object-fit: contain;
     border-bottom: 2px solid #ff4655; /* Línea roja */
     }
     
