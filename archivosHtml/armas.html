@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="../archivoStyle/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+
+              <a href="./home.html"><img src="../RecursosExt/valorant-logo-freelogovectors.net_.png" alt=""></a>
+
+          </nav>
+          
+    </header>
+    <div class="menu-total left-0-menu-total">
+      <div class="menu-desplegable left-0-menu">
+              <a class="nav-link ov-btn-slide-left text-light" href="./home.html"><img src="../RecursosExt/1-removebg-preview.png" alt="" class="logos-menu">Home</a>
+
+             <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/2-removebg-preview.png" alt="" class="logos-menu">Personajes</a>
+ 
+             <a class="nav-link ov-btn-slide-left text-light" href="./mapas.html"><img src="../RecursosExt/3-removebg-preview.png" alt="" class="logos-menu">Mapas</a>
+ 
+             <a class="nav-link ov-btn-slide-left text-light" href="./armas.html"><img src="../RecursosExt/4-removebg-preview.png" alt="" class="logos-menu">Armas</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="./stats2.html"><img src="../RecursosExt/5-removebg-preview.png" alt="" class="logos-menu">Rangos</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/6-removebg-preview.png" alt="" class="logos-menu">Gamemodes</a>
+ 
+ 
+      </div>
+             <button class="text-light lista-desplegable">⮞</button>
+         </div>
+
+    <main id="app" >
+        <div class="formularios">
+            {{superFiltro}}
+            <div class="d-flex  align-items-center">
+                <div class="col-md-12  container-fluid pt-2 ">
+                    <div id="checkboxContainer" class="d-flex flex-wrap justify-content-center">
+                        <div v-for="(categoria, index) in categorias" class="form-check me-3">
+                            <input v-model="categoriasSel" class="form-check-input" type="checkbox" :id="categoria" :value="categoria">
+                            <label class="form-check-label" :for="categoria">{{ categoria }}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 Contenedor-busqueda pt-1">
+                    <form class="d-flex justify-content-end">
+                        <input v-model="textoBuscador" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    </form>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="container p-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <div v-for="arma in arsenal" class="col d-flex justify-content-center">
+                    <article class="card_article h-100">
+                        <img :src="arma.displayIcon" class="card_img" :alt="arma.displayName">
+                        <div class="card_data card-body d-flex flex-column">
+                            <h5 class="text-white">{{ arma.displayName }}</h5>
+                            <p class="text-light">Categoria: {{ arma.category }}</p>
+                            <div class="mt-auto d-flex justify-content-around align-items-center">
+                                <span v-if="arma.shopData && arma.shopData.cost" class="fs-4 fw-bold text-warning mb-0">
+                                    ${{ arma.shopData.cost }}
+                                </span>
+                                <span v-else class="fs-4 fw-bold text-warning mb-0">
+                                    N/A
+                                </span>
+                            </div>
+                            <img src="../RecursosExt/VALORANT_V_Red.jpg" class="card_bg" alt="image">
+                            <a :href="'./armaDetalles.html?uuid=' + arma.uuid" class="card_button btn btn-warning" style="color: white;">Detalles</a>
+                            
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../archivosJS/armas.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

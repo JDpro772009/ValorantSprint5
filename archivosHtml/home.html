@@ -25,8 +25,8 @@
  
              <a class="nav-link ov-btn-slide-left text-light" href="./mapas.html"><img src="../RecursosExt/3-removebg-preview.png" alt="" class="logos-menu">Mapas</a>
  
-             <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/4-removebg-preview.png" alt="" class="logos-menu">Armas</a>
-             <a class="nav-link ov-btn-slide-left text-light" href="../archivosHtml/stats2.html"><img src="../RecursosExt/5-removebg-preview.png" alt="" class="logos-menu">Rangos</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="./armas.html"><img src="../RecursosExt/4-removebg-preview.png" alt="" class="logos-menu">Armas</a>
+             <a class="nav-link ov-btn-slide-left text-light" href="./stats2.html"><img src="../RecursosExt/5-removebg-preview.png" alt="" class="logos-menu">Rangos</a>
              <a class="nav-link ov-btn-slide-left text-light" href="#"><img src="../RecursosExt/6-removebg-preview.png" alt="" class="logos-menu">Gamemodes</a>
  
  
@@ -74,60 +74,71 @@
        </div>
       
        <h4 class="text-center"><span class="text-danger">Explora</span> y <span class="text-danger">aprende</span> un poco mas sobre <span class="text-danger">...</span></h4>
-       
-       <article class="articulo">
-        
-         <div>
-          <h5 class="text-center">Personajes</h5>
-
-           <img :src="this.personajes" alt="" class="pers">
-
-           <p>Los agentes son los personajes jugables en VALORANT, que representan a un agente del Protocolo VALORANT. Cada agente sirve como una clase diferente con cuatro habilidades y en su mayoría se desbloquean mediante el uso de Kingdom Credits.<br>Valorant presenta cuatro roles principales: duelistas, iniciadores, controladores y centinelas. Cada rol tiene un estilo de juego específico y un conjunto de rasgos en el juego que contribuyen a una composición equilibrada del equipo.</p>
-        </div>
-       </article>
-       <article class="articulo">
-        
-        <div>
-         <h5 class="text-center">Mapas</h5>
-
-          <img :src="this.Mapas" alt="" class="pers">
-
-          <p>
-            Cada partida de VALORANT tiene lugar en un mapa. La mayoría de los mapas cuentan con un área de generación para cada equipo, barreras que limitan las áreas accesibles durante la fase de compra para los modos de juego Plantar/Desactivar y sitios objetivos donde se plantará la spike.</p>
-       </div>
-      </article>
-      <article class="articulo">
-        
-        <div>
-         <h5 class="text-center">Armas</h5>
-
-          <img :src="this.Armas" alt="" class="pers">
-
-          <p>
-            Las armas se dividen en dos categorías, armas de mano y armas primarias. Las armas de mano consisten en pistolas, mientras que las primarias incluyen SMG, escopetas, rifles, rifles de francotirador y ametralladoras. Las armas tienen cantidades limitadas de munición pero vienen con cargadores de reserva.</p>
-       </div>
-
-      </article>
-      <article class="articulo">
-        
-        <div>
-         <h5 class="text-center">Rangos</h5>
-
-          <img :src="this.Estadisticas" alt="" class="pers">
-
-          <p>Estos son los rangos: Hierro, Bronce, Plata, Oro, Platino, Diamante, Ascendente, Inmortal y Radiante. Con excepción de Radiante, cada rango está compuesto de tres grados. Entre más alto sea el número, mejor será tu rango. Tu rango afectará directamente tu rango de acto con el tiempo.</p>
-       </div>
-      </article>
-      <article class="articulo">
-        
-        <div>
-          <h5 class="text-center">GameModes</h5>
+       <a href="#" style="text-decoration: none; color: inherit">
+         <article class="articulo">
+          
+           <div>
+            <h5 class="text-center">Personajes</h5>
   
-           <img src="../RecursosExt/Ask_Riot_Banner_Events_Modes_More_t3iojvqj680s0muw4o0x.jpg" alt="" class="pers">
+             <img :src="this.personajes" alt="" class="pers">
   
-           <p>Los modos de juego son diferentes tipos de modos que se pueden jugar en VALORANT. La mayoría de los modos se pueden categorizar como estilo Plant/Defuse o estilo Deathmatch.</p>
-        </div>
-      </article>
+             <p>Los agentes son los personajes jugables en VALORANT, que representan a un agente del Protocolo VALORANT. Cada agente sirve como una clase diferente con cuatro habilidades y en su mayoría se desbloquean mediante el uso de Kingdom Credits.<br>Valorant presenta cuatro roles principales: duelistas, iniciadores, controladores y centinelas. Cada rol tiene un estilo de juego específico y un conjunto de rasgos en el juego que contribuyen a una composición equilibrada del equipo.</p>
+          </div>
+         </article>
+       </a>
+       <a href="./mapas.html" style="text-decoration: none; color: inherit">
+         <article class="articulo">
+          
+          <div>
+           <h5 class="text-center">Mapas</h5>
+  
+            <img :src="this.Mapas" alt="" class="pers">
+  
+            <p>
+              Cada partida de VALORANT tiene lugar en un mapa. La mayoría de los mapas cuentan con un área de generación para cada equipo, barreras que limitan las áreas accesibles durante la fase de compra para los modos de juego Plantar/Desactivar y sitios objetivos donde se plantará la spike.</p>
+         </div>
+        </article>
+       </a>
+       <a href="./armas.html" style="text-decoration: none; color: inherit">
+         <article class="articulo">
+           
+           <div>
+            <h5 class="text-center">Armas</h5>
+   
+             <img :src="this.Armas" alt="" class="pers">
+   
+             <p>
+               Las armas se dividen en dos categorías, armas de mano y armas primarias. Las armas de mano consisten en pistolas, mientras que las primarias incluyen SMG, escopetas, rifles, rifles de francotirador y ametralladoras. Las armas tienen cantidades limitadas de munición pero vienen con cargadores de reserva.</p>
+          </div>
+   
+         </article>
+       </a>
+       <a href="./stats2.html" style="text-decoration: none; color: inherit">
+        <article class="articulo">
+        
+          <div>
+           <h5 class="text-center">Rangos</h5>
+  
+            <img :src="this.Estadisticas" alt="" class="pers">
+  
+            <p>Estos son los rangos: Hierro, Bronce, Plata, Oro, Platino, Diamante, Ascendente, Inmortal y Radiante. Con excepción de Radiante, cada rango está compuesto de tres grados. Entre más alto sea el número, mejor será tu rango. Tu rango afectará directamente tu rango de acto con el tiempo.</p>
+         </div>
+        </article>
+
+       </a>
+      <a href="#">
+        <article class="articulo">
+          
+          <div>
+            <h5 class="text-center">GameModes</h5>
+    
+             <img src="../RecursosExt/Ask_Riot_Banner_Events_Modes_More_t3iojvqj680s0muw4o0x.jpg" alt="" class="pers">
+    
+             <p>Los modos de juego son diferentes tipos de modos que se pueden jugar en VALORANT. La mayoría de los modos se pueden categorizar como estilo Plant/Defuse o estilo Deathmatch.</p>
+          </div>
+        </article>
+
+      </a>
       
       
        
