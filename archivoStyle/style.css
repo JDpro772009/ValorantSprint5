@@ -89,13 +89,10 @@ width: 100%;
 
 }
 .logos-menu{
-  width: 2.5rem;
+  width: 5rem;
   margin-right: 2rem;
 }
-.logos-menuM{
-  width: 4rem;
-  margin-right: 2rem;
-}
+
 .articulo{
 
   max-width: 100%;
@@ -467,7 +464,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -74%;
+    margin-left: -83%;
   }
  
 }
@@ -476,7 +473,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -63%;
+    margin-left: -71%;
   }
 
 }
@@ -485,7 +482,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -55%;
+    margin-left: -62%;
   }
 }
 @media ( min-width: 768px) {
@@ -493,7 +490,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -30.5%;
+    margin-left: -34.5%;
   }
 
 
@@ -503,7 +500,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -22.8%;
+    margin-left: -26%;
   }
 
 }
@@ -512,7 +509,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -18.5%;
+    margin-left: -21%;
   }
 
 }
@@ -522,7 +519,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -16.5%;
+    margin-left: -18.5%;
     
   }
   
@@ -532,7 +529,7 @@ h1{
     top: 0rem;
   }
   .left-0-menu-total{
-    margin-left: -18.5%;
+    margin-left: -10.6%;
     
   }
   
