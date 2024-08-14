@@ -444,6 +444,151 @@ h1{
     background: #fc01014f;
     box-shadow: 0 0 0 10px #cc0b3834, 0 0 50px #d1097b4f, 0 0 100px #bd0a104f;
 }
+.table{
+  width: 95%;
+  border-style: double;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-color: blueviolet;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid blueviolet;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+h2{
+  color: blueviolet;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#informacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+#carousel-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.card-banner{
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  background-color: black;
+  color: #f9f9f9;
+}
+.card-banner:hover {
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.8), /* Brillo amarillo */
+              0 0 40px rgba(255, 60, 0, 0.8); /* Brillo adicional */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* Redondear la parte superior de la tarjeta */
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+#agentIcon{
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  border-style: double;
+  border-color: blueviolet;
+}
+#weaponIcon{
+  width: 400px;
+  padding: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(255, 255, 255);
+  
+}
+#weaponIcon2{
+  width: 200px;
+}
+#mapIcon{
+  width: 400px;
+  padding: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(255, 255, 255);
+  
+}
+#mapIcon2{
+  width: 150px;
+}
+
+.card-title{
+  color: blueviolet;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 4rem;
+}
+
+#informacion-mapa{
+  background-color:blueviolet;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;  
+}
+#banner-stats{
+  width: 35rem;
+  margin-left: 0.5rem;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'VALORANT';
+  color: white;
+  text-align: center;
+}
+h2{
+  color: blueviolet;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
 @keyframes animate {
     0% {
         transform: translateY(100vh) scale(0);
