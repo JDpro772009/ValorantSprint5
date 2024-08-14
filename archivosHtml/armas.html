@@ -36,54 +36,125 @@
          </div>
 
     <main id="app" >
-        <div class="formularios">
-            {{superFiltro}}
-            <div class="d-flex  align-items-center">
-                <div class="col-md-12  container-fluid pt-2 ">
-                    <div id="checkboxContainer" class="d-flex flex-wrap justify-content-center">
-                        <div v-for="(categoria, index) in categorias" class="form-check me-3">
-                            <input v-model="categoriasSel" class="form-check-input" type="checkbox" :id="categoria" :value="categoria">
-                            <label class="form-check-label" :for="categoria">{{ categoria }}</label>
+        <div class="particlesContainer">
+            <div class="bubbles">
+            <span style="--i:11"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:16"></span>
+            <span style="--i:9"></span>
+            <span style="--i:8"></span>
+            <span style="--i:3"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:7"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:8"></span>
+            <span style="--i:3"></span>
+            <span style="--i:11"></span>
+            <span style="--i:3"></span>
+            <span style="--i:14"></span>
+            <span style="--i:5"></span>
+            <span style="--i:5"></span>
+            <span style="--i:8"></span>
+            </div>
+        
+            <div class="formularios">
+                {{superFiltro}}
+                <div class="d-flex  align-items-center">
+                    <div class="col-md-12  container-fluid pt-2 ">
+                        <div id="checkboxContainer" class="d-flex flex-wrap justify-content-center">
+                            <div v-for="(categoria, index) in categorias" class="form-check me-3">
+                                <input v-model="categoriasSel" class="form-check-input" type="checkbox" :id="categoria" :value="categoria">
+                                <label class="form-check-label" :for="categoria">{{ categoria }}</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 Contenedor-busqueda pt-1">
-                    <form class="d-flex justify-content-end">
-                        <input v-model="textoBuscador" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    </form>
-                </div>
-            </div> 
-        </div>
-    
-        <div class="container p-3">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
-                <div v-for="arma in arsenal" class="col d-flex justify-content-center">
-                    <article class="card_article h-100">
-                        <img :src="arma.displayIcon" class="card_img" :alt="arma.displayName">
-                        <div class="card_data card-body d-flex flex-column">
-                            <h5 class="text-white">{{ arma.displayName }}</h5>
-                            <p class="text-light">Categoria: {{ arma.category }}</p>
-                            <div class="mt-auto d-flex justify-content-around align-items-center">
-                                <span v-if="arma.shopData && arma.shopData.cost" class="fs-4 fw-bold text-warning mb-0">
-                                    ${{ arma.shopData.cost }}
-                                </span>
-                                <span v-else class="fs-4 fw-bold text-warning mb-0">
-                                    N/A
-                                </span>
-                            </div>
-                            <img src="../RecursosExt/VALORANT_V_Red.jpg" class="card_bg" alt="image">
-                            <a :href="'./armaDetalles.html?uuid=' + arma.uuid" class="card_button btn btn-warning" style="color: white;">Detalles</a>
-                            
-
-                        </div>
-                    </article>
-                </div>
+                    <div class="col-md-4 Contenedor-busqueda pt-1">
+                        <form class="d-flex justify-content-end">
+                            <input v-model="textoBuscador" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        </form>
+                    </div>
+                </div> 
             </div>
-        </div>
         
-    </main>
+            <div class="container p-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                    <div v-for="arma in arsenal" class="col d-flex justify-content-center">
+                        <article class="card_article h-100">
+                            <img :src="arma.displayIcon" class="card_img" :alt="arma.displayName">
+                            <div class="card_data card-body d-flex flex-column">
+                                <h5 class="text-white">{{ arma.displayName }}</h5>
+                                <p class="text-light">Categoria: {{ arma.category }}</p>
+                                <div class="mt-auto d-flex justify-content-around align-items-center">
+                                    <span v-if="arma.shopData && arma.shopData.cost" class="fs-4 fw-bold text-warning mb-0">
+                                        ${{ arma.shopData.cost }}
+                                    </span>
+                                    <span v-else class="fs-4 fw-bold text-warning mb-0">
+                                        N/A
+                                    </span>
+                                </div>
+                                <img src="../RecursosExt/VALORANT_V_Red.jpg" class="card_bg" alt="image">
+                                <a :href="'./armaDetalles.html?uuid=' + arma.uuid" class="card_button btn btn-warning" style="color: white;">Detalles</a>
+                                
     
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>          
+    
+    
+            
+           <div class="bubbles">
+            <span style="--i:11"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:16"></span>
+            <span style="--i:9"></span>
+            <span style="--i:8"></span>
+            <span style="--i:3"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:7"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:8"></span>
+            <span style="--i:3"></span>
+            <span style="--i:11"></span>
+            <span style="--i:3"></span>
+            <span style="--i:14"></span>
+            <span style="--i:5"></span>
+            <span style="--i:5"></span>
+            <span style="--i:8"></span>
+            </div>
+        
+          </div>
 
+        
+        
+     
+    </main>
+    <footer>
+        <h2 class="text-danger m-3">Valorant &copy</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f icon"></i>    </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+  
+        </ul>
+        
+        
+        
+      </footer>
+    
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../archivosJS/armas.js" type="module"></script>
