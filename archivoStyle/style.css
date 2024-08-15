@@ -492,7 +492,9 @@ h2{
   margin-top: 2rem;
   padding: 1rem;
 }
-
+.card-text {
+  color: #340852;
+}
 .card-banner{
   width: 50rem;
   height: 20rem;
