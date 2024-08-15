@@ -1656,3 +1656,29 @@ background: #0077b5;
     padding: 5px;
     border-radius: 3px;
     }
+
+
+  /* ========cambios jair ============= */
+.modal-header {
+  background-color: #36040a;
+}
+#exampleModalLabel {
+  color: #f0f0f0;
+}
+
+#product-title {
+  font-size: 26px;
+  color: #05022e;
+}
+.text-center {
+  color: #211563;
+}
+.modal-body {
+  background-color: #333;
+}
+#mi-codigo {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(70, 70, 95);
+}
+  /* ========cambios jair ============= */
