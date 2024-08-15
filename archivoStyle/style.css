@@ -489,14 +489,6 @@ th, td {
 }
 
 
-
-h2{
-  color: blueviolet;
-  font-family: 'VALORANT', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-}
-
 #informacion{
   display: flex;
   flex-direction: row;
@@ -1233,34 +1225,6 @@ body.page main {
   background: #fc01014f;
   box-shadow: 0 0 0 10px #cc0b3834, 0 0 50px #d1097b4f, 0 0 100px #bd0a104f;
 }
-.table{
-width: 95%;
-border-style: double;
-margin-top: 1rem;
-margin-bottom: 1rem;
-margin-left: 1rem;
-border-color: blueviolet;
-}
-
-th, td {
-padding: 12px;
-text-align: left;
-border-bottom: 1px solid blueviolet;
-}
-
-th {
-background-color: #f2f2f2;
-}
-
-td {
-background-color: #f9f9f9;
-}
-h2{
-color: blueviolet;
-font-family: 'VALORANT', sans-serif;
-font-size: 2rem;
-text-align: center;
-}
 
 #informacion{
 display: flex;
@@ -1362,18 +1326,7 @@ padding: 1rem;
 width: 35rem;
 margin-left: 0.5rem;
 }
-h1{
-font-size: 3rem;
-font-family: 'VALORANT';
-color: white;
-text-align: center;
-}
-h2{
-color: blueviolet;
-font-family: 'VALORANT', sans-serif;
-font-size: 2rem;
-text-align: center;
-}
+
 
 
 @keyframes animate {
