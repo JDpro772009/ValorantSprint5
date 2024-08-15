@@ -279,61 +279,7 @@ h1{
   display: inline;
 
 }
-.btn {
-    
-    padding: 15px 40px;
-    border: none;
-    outline: none;
-    width: 6rem;
-    color: #FFF;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 12px;
-  }
-  .btn::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 6rem;
-    height: 100%;
-    background-color: #333;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-  /* glow */
-  .btn::before {
-    content: "";
-    background: linear-gradient(
-      45deg,
-      #FF0000, #FF7300,#ffffff, #ff0048,
-      #ff002f, #ffd000, #FF0000
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: 6rem;
-    height:  calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    opacity: 0;
-  }
-  
-  @keyframes glowing {
-    0% {background-position: 0 0;}
-    50% {background-position: 400% 0;}
-    100% {background-position: 0 0;}
-  }
-  
-  /* hover */
-  .btn:hover::before {
-    opacity: 1;
-  }
+
   
   
   .ov-btn-slide-bottom {
@@ -555,7 +501,7 @@ h2{
 .card-title{
   color: blueviolet;
   font-family: 'VALORANT', sans-serif;
-  font-size: 4rem;
+
 }
 
 #informacion-mapa{
@@ -1030,60 +976,8 @@ h1{
 display: inline;
 
 }
-.btn {
-  
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  width: 6rem;
-  color: #FFF;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-}
-.btn::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 6rem;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-/* glow */
-.btn::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300,#ffffff, #ff0048,
-    #ff002f, #ffd000, #FF0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: 6rem;
-  height:  calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-  opacity: 0;
-}
-
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
-}
-
-/* hover */
-.btn:hover::before {
-  opacity: 1;
+.btn2{
+  margin-left: 2rem;
 }
 
 
@@ -1306,7 +1200,7 @@ width: 150px;
 .card-title{
 color: blueviolet;
 font-family: 'VALORANT', sans-serif;
-font-size: 4rem;
+
 }
 
 #informacion-mapa{
