@@ -529,6 +529,10 @@ body.page main {
   margin-left: 1rem;
   border-color: #fc01014f;
 }
+#weaponTable1:hover {
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.8), /* Brillo amarillo */
+              0 0 20px rgba(255, 60, 0, 0.8); /* Brillo adicional */
+}
 
 th, td {
   padding: 12px;
@@ -589,7 +593,7 @@ th, td {
   /* Redondear la parte superior de la tarjeta */
 }
 
-.card-body {
+.card-item {
   text-align: center;
   width: 100%;
   height: 22rem;
@@ -638,11 +642,11 @@ th, td {
 .card-title{
   color: blueviolet;
   font-family: 'VALORANT', sans-serif;
-
+  font-size: 4rem;
 }
 
 #informacion-mapa{
-  background-color:blueviolet;
+  background-color:rgb(165, 56, 5);
   color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -657,6 +661,11 @@ th, td {
 #banner-stats{
   width: 35rem;
   margin-left: 0.5rem;
+}
+#banner-stats:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.8), 
+              0 0 20px rgba(255, 60, 0, 0.8); 
 }
 
 h1 {
@@ -1194,22 +1203,7 @@ border-color: blueviolet;
 }
 */
 
-#informacion-mapa{
-background-color:blueviolet;
-color: aliceblue;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 1rem;
-margin-left: 3rem;
-margin-right: 3rem;
-margin-bottom: 3rem;
-padding: 1rem;  
-}
-#banner-stats{
-width: 35rem;
-margin-left: 0.5rem;}
+
 
 
 

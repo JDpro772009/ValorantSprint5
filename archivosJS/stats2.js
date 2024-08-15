@@ -107,7 +107,7 @@ function renderAgentCard(agent) {
     agentCardContainer.innerHTML = `
             <div class="card-banner">
                 <img id="agentIcon" src="${agent.displayIcon}" class="card-img-top" alt="${agent.displayName}">
-                <div class="card-body">
+                <div class="card-item">
                 <h5 class="card-title">${agent.displayName}</h5>
                 <p class="card-text"><strong>Habilidades:</strong></p>
                 <div>${agent.abilities.map(ability => `<li>${ability.displayName}</li>`).join('')}</div>
@@ -159,7 +159,7 @@ function renderWeaponCard(weapon) {
             <div>
             <img id="weaponIcon" src="${weapon.displayIcon}"class="card-img-top" alt="${weapon.displayName}">
             </div>
-            <div class="Card-body">
+            <div class="card-item">
                 <h5 class="card-title ">${weapon.displayName}</h5>
                 <p><strong>Tipo:</strong> ${weapon.shopData?.category}</p>
                 <p><strong>Daño Máximo (Cabeza):</strong> ${weapon.weaponStats.damageRanges[0].headDamage}</p>
@@ -197,7 +197,7 @@ function renderYoruCard(agent) {
     card.className = 'card-banner';
     card.innerHTML = `
         <img id="agentIcon" src="${agent.fullPortrait}" alt="${agent.displayName}">
-        <div class="card-body">
+        <div class="card-item">
             <h5>${agent.displayName}</h5>
             <p><strong>Rol:</strong> ${agent.role.displayName}</p>
             <p><strong>Descripción:</strong> ${agent.description}</p>
@@ -237,7 +237,7 @@ function renderBrimstoneCard(agent) {
     card.className = 'card-banner';
     card.innerHTML = `
         <img id="agentIcon" src="${agent.fullPortrait}" alt="${agent.displayName}">
-        <div class="agent-card-body">
+        <div class="card-item">
             <h5>${agent.displayName}</h5>
             <p><strong>Rol:</strong> ${agent.role.displayName}</p>
             <p><strong>Descripción:</strong> ${agent.description}</p>
@@ -276,7 +276,7 @@ function renderMapCard(map) {
     card.className = 'card-banner';
     card.innerHTML = `
         <img id="mapIcon" src="${map.splash}" alt="${map.displayName}">
-        <div class="card-body">
+        <div class="card-item">
             <h5 class="card-title">${map.displayName}</h5>
             <p><strong>Descripción:</strong> ${map.tacticalDescription || 'Descripción no disponible.'}</p>
         </div>
