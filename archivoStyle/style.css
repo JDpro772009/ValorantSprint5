@@ -1242,6 +1242,9 @@ border-color: blueviolet;
   --black-color: hsl(170, 12%, 8%);
 }
 
+#mainArmas {
+  min-height: 80vh; 
+}
 
 
 
