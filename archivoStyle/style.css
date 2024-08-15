@@ -1889,16 +1889,8 @@ footer ul li:nth-child(3) a:before {
 
 
 
-.grow-animation {
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
-}
 
-.hidden {
-  transform: scale(0.5);
-  opacity: 0;
-}
-
+ /* Estilos Emmanuel Cime */
 
 .currency {
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -1944,8 +1936,23 @@ footer ul li:nth-child(3) a:before {
   border-radius: 5px;
 }
 
-h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: white;
+
+.gameCard {
+  height: 950px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  background-color: #f0f0f0;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 4px
+}
+
+.gameCard:hover {
+  transform: scale(1.1);
 }
