@@ -517,32 +517,52 @@ body.page main {
   background: #fc01014f;
   box-shadow: 0 0 0 10px #cc0b3834, 0 0 50px #d1097b4f, 0 0 100px #bd0a104f;
 }
-
-.table {
+.table{
   width: 95%;
   border-style: double;
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  border-color: blueviolet;
+  border-color: #fc01014f;
+}
+#agentTable:hover {
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.8), /* Brillo amarillo */
+              0 0 20px rgba(255, 60, 0, 0.8); /* Brillo adicional */
+              transform: scale(1.1); 
 }
 
-th,
-td {
+#weaponTable{
+  width: 100%;
+  border-style: double;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-color: #fc01014f;
+}
+#weaponTable:hover {
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.8), /* Brillo amarillo */
+              0 0 20px rgba(255, 60, 0, 0.8); /* Brillo adicional */
+}
+#weaponTable1{
+  width: 100%;
+  border-style: double;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-color: #fc01014f;
+}
+
+th, td {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid blueviolet;
 }
 
-th {
-  background-color: #f2f2f2;
-}
 
 td {
   background-color: #f9f9f9;
 }
-
-h2 {
+h2{
   color: blueviolet;
   font-family: 'VALORANT', sans-serif;
   font-size: 2rem;
@@ -568,8 +588,10 @@ h2 {
   margin-top: 2rem;
   padding: 1rem;
 }
-
-.card-banner {
+.card-text {
+  color: #340852;
+}
+.card-banner{
   width: 50rem;
   height: 20rem;
   display: flex;
@@ -583,6 +605,7 @@ h2 {
   margin-right: 5rem;
   background-color: black;
   color: #f9f9f9;
+  border-radius: 0.5rem;
 }
 
 .card-banner:hover {
@@ -602,6 +625,7 @@ h2 {
 .card-body {
   padding: 15px;
   text-align: center;
+  width: 90%;
 }
 
 #agentIcon {
@@ -609,7 +633,7 @@ h2 {
   height: 250px;
   border-radius: 10%;
   border-style: double;
-  border-color: blueviolet;
+  border-color:#fc01014f;
 }
 
 #weaponIcon {
@@ -623,27 +647,27 @@ h2 {
 #weaponIcon2 {
   width: 200px;
 }
-
-#mapIcon {
+#mapIcon{
   width: 400px;
   padding: 2rem;
   margin-right: 2rem;
   background-color: rgb(255, 255, 255);
-
+  
 }
 
 #mapIcon2 {
   width: 150px;
+  border-radius: 0.5rem;
 }
 
-.card-title {
+.card-title{
   color: blueviolet;
   font-family: 'VALORANT', sans-serif;
   font-size: 4rem;
 }
 
-#informacion-mapa {
-  background-color: blueviolet;
+#informacion-mapa{
+  background-color:blueviolet;
   color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -655,8 +679,7 @@ h2 {
   margin-bottom: 3rem;
   padding: 1rem;
 }
-
-#banner-stats {
+#banner-stats{
   width: 35rem;
   margin-left: 0.5rem;
 }
@@ -1426,20 +1449,20 @@ h2 {
   padding: 1rem;
 }
 
-.card-banner {
-  width: 50rem;
-  height: 20rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
-  margin-right: 5rem;
-  background-color: black;
-  color: #f9f9f9;
+.card-banner{
+width: 50rem;
+height: 20rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+padding: 1rem;
+margin-bottom: 2rem;
+margin-left: 3rem;
+margin-right: 5rem;
+background-color: black;
+color: #f9f9f9;
 }
 
 .card-banner:hover {
@@ -1448,7 +1471,14 @@ h2 {
     0 0 40px rgba(255, 60, 0, 0.8);
   /* Brillo adicional */
 }
-
+p{
+font-family: 'VALORANT', sans-serif;
+padding: 0.5rem;
+margin-bottom: 1rem;
+}
+#agentAbilities{
+  margin-bottom: 1rem;
+}
 .card img {
   width: 100%;
   height: auto;
@@ -1457,16 +1487,16 @@ h2 {
 }
 
 .card-body {
-  padding: 15px;
-  text-align: center;
+padding: 15px;
+text-align: center;
 }
 
-#agentIcon {
-  width: 250px;
-  height: 250px;
-  border-radius: 10%;
-  border-style: double;
-  border-color: blueviolet;
+#agentIcon{
+width: 250px;
+height: 250px;
+border-radius: 10%;
+border-style: double;
+border-color: blueviolet;
 }
 
 #weaponIcon {
@@ -1493,24 +1523,24 @@ h2 {
   width: 150px;
 }
 
-.card-title {
-  color: blueviolet;
-  font-family: 'VALORANT', sans-serif;
-  font-size: 4rem;
+.card-title{
+color: blueviolet;
+font-family: 'VALORANT', sans-serif;
+font-size: 4rem;
 }
 
-#informacion-mapa {
-  background-color: blueviolet;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
-  padding: 1rem;
+#informacion-mapa{
+background-color:blueviolet;
+color: aliceblue;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+margin-left: 3rem;
+margin-right: 3rem;
+margin-bottom: 3rem;
+padding: 1rem;  
 }
 
 #banner-stats {

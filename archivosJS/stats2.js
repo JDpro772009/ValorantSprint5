@@ -202,8 +202,8 @@ function renderYoruCard(agent) {
             <p><strong>Rol:</strong> ${agent.role.displayName}</p>
             <p><strong>Descripción:</strong> ${agent.description}</p>
             <p><strong>Habilidades:</strong></p>
-                ${agent.abilities.map(ability => `<li>${ability.displayName}</li>`).join('')}
-            
+            <div id="agentAbilities">${agent.abilities.map(ability => `<li>${ability.displayName}</li>`).join('')}
+            </div>
         </div>
     `;
     agentCardContainer.appendChild(card);
@@ -275,7 +275,7 @@ function renderMapCard(map) {
     const card = document.createElement('div');
     card.className = 'card-banner';
     card.innerHTML = `
-        <img id="mapIcon" src="${map.listViewIcon}" alt="${map.displayName}">
+        <img id="mapIcon" src="${map.splash}" alt="${map.displayName}">
         <div class="card-body">
             <h5 class="card-title">${map.displayName}</h5>
             <p><strong>Descripción:</strong> ${map.tacticalDescription || 'Descripción no disponible.'}</p>
