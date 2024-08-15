@@ -142,59 +142,14 @@ picture-in-picture;
                                                         Close
                                                     </button>
                                                     <div>
-                                                        <button v-if="producto.toBuy == false"
-                                                            class="btn d-flex justify-content-center btn-primary"
-                                                            @click="toBuy(producto)">Save
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                                viewBox="0 -960 960 960" width="24px" fill="#00ff00">
-                                                                <path d="M440-600v-120H320v-80h120v-120h80v120h120v80                                                                    H520v120h-80ZM280-80q-33 0-56.5-23. 
-                                                                    5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.
-                                                                    5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 
-                                                                    0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 
-                                                                    0 56.5 23.5T760-160q0 33-23.5 56.
-                                                                    5T680-80ZM40-800v-80h131l170 
-                                                                    360h280l156-280h91L692-482q-11 20-29.5 
-                                                                    31T622-440H324l-44 80h480v80H280q-45 0-68.
-                                                                    5-39t-1.5-79l54-98-144-304H40Z">
-                                                            </svg>
-                                                        </button>
-                                                        <button v-if="producto.toBuy == true"
-                                                            class="btn d-flex justify-content-center btn-primary"
-                                                            @click="limpiarCarrito(producto)">Quit
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="12px"
-                                                                viewBox="0 -960 960 960" width="4px" fill="red">
-                                                                <path d="m634-440-81-80h69l110-200H353l-80-80h525q23 
-                                                                    0 35.5 19.5t.5 42.5L692-482q-11 20-28 31t-30 
-                                                                    11ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.
-                                                                    5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.
-                                                                    5 56.5T280-80Zm540 52L566-280H304q-44 0-67-37.
-                                                                    5t-3-78.5l42-86-72-162L28-820l56-56L876-84l-56 
-                                                                    56ZM486-360l-80-80h-62l-40 80h182Zm136-160h-69 
-                                                                    69Zm58 440q-33 0-56.5-23.5T600-160q0-33 23.
-                                                                    5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.
-                                                                    5 56.5T680-80Z">
-                                                            </svg>
-                                                        </button>
+                                                    
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <button v-if="producto.toBuy == false"
-                                            class="btn d-flex justify-content-center btn-primary"
-                                            @click="toBuy(producto)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00ff00">
-                                                <path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM28
-                                                    0-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 
-                                                    23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.
-                                                    5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 
-                                                    33-23.5 56.5T680-80ZM40-800v-80h131l170 
-                                                    360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 
-                                                    80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z">
-                                            </svg>
-                                        </button>
+                                       
                                         <button v-if="producto.toBuy == true"
                                             class="btn d-flex justify-content-center btn-primary"
                                             @click="limpiarCarrito(producto)">
@@ -217,21 +172,7 @@ picture-in-picture;
                     </div>
                 </div>
             </div>
-            <button v-if="listaCarrito.length > 0" type="button"
-                class="btn btn-warning d-flex flex-column align-items-center fw-bold text-white"
-                style="position: fixed; bottom: 20vh; right: 8vw;" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                redeem<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#ff5733">
-                    <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 
-                        56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 
-                        33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.
-                        5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.
-                        5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z">
-                </svg><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light 
-                    rounded-circle">
-                    <span class="visually-hidden">New alerts</span>
-            </button>
+          
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
