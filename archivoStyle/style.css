@@ -1276,3 +1276,24 @@ h3 {
 .buscar:focus{
   outline: none;
 }
+  /* ========cambios jair ============= */
+.modal-header {
+  background-color: #36040a;
+}
+#exampleModalLabel {
+  color: #f0f0f0;
+}
+
+#product-title {
+  font-size: 26px;
+  color: #05022e;
+}
+.text-center {
+  color: #211563;
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(70, 70, 95);
+}
+  /* ========cambios jair ============= */
