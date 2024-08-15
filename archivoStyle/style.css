@@ -1673,6 +1673,9 @@ background: #0077b5;
 #product-description {
   color: #b7acc0;
 }
+#modalFooter2 {
+  background-color: #333;
+}
 .modal-body {
   background-color: #333;
 }
