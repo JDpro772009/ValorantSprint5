@@ -1479,8 +1479,8 @@ h3 {
   font-size: 26px;
   color: #05022e;
 }
-.text-center {
-  color: #211563;
+#product-description {
+  color: #b7acc0;
 }
 .modal-body {
   background-color: #333;
