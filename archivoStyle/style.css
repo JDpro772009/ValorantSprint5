@@ -1454,8 +1454,11 @@ border-color: blueviolet;
   border-radius: 5px;
   padding: 15px;
   margin: 10px 0;
+  height: 160vh;
 }
-
+.game-mode:hover .tex{
+  color: #ca222a;
+}
 .game-mode img {
   max-width: 100%;
   border-radius: 5px;
@@ -1479,6 +1482,7 @@ h3 {
 .buscar:focus{
   outline: none;
 }
+.game-mode
   /* ========cambios jair ============= */
 .modal-header {
   background-color: #36040a;

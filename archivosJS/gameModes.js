@@ -18,7 +18,7 @@ function displayGameModes(gameModes) {
         modeDiv.className = 'col-md-6 col-lg-4 hidden'
         modeDiv.innerHTML = `
             <div id="gameContainer" class="game-mode bg-white shadow-sm p-4 rounded">
-                <h2 class="text-center">${mode.displayName}</h2>
+                <h2 class="text-center tex">${mode.displayName}</h2>
                 <p class="text-center m-3">${mode.description ? mode.description : 'Fun and fast-paced gameplay, making it ideal for players looking to enjoy a casual experience without the pressure of competitive play.'}</p>
                 <img src="${mode.listViewIconTall ? mode.listViewIconTall : '../RecursosExt/VALORANT Design Work.jpeg'}" alt="${mode.displayName} image">
             </div>
