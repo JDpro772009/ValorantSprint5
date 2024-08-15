@@ -190,6 +190,7 @@ nav>a {
 .despNav>a:hover {
   color: #ee154b;
 }
+.cartaMaps
 
 .dropdown-menu {
   background-color: #a60000;
@@ -292,7 +293,7 @@ nav>a {
   border-radius: 20px;
   color: gold;
   background-color: #2b2a2a;
-  margin-right: 1rem;
+
 }
 
 .cartaMaps h5 {
@@ -309,7 +310,7 @@ nav>a {
   margin: 0.3rem;
   margin-top: 1rem;
   border-radius: 10px;
-  min-width: 21rem;
+  min-width: 19.4rem;
   transition: all 0.3s;
 }
 
@@ -642,7 +643,7 @@ th, td {
 .card-title{
   color: blueviolet;
   font-family: 'VALORANT', sans-serif;
-  font-size: 4rem;
+
 }
 
 #informacion-mapa{
@@ -704,6 +705,14 @@ h2 {
   .menu-total {
     top: 0rem;
   }
+  .lista-desplegable-fav{
+    margin-right: 5rem;
+  }
+  .margin-top-fav{
+    margin-top: -23.7rem;
+    transition: all .5s;
+    
+  }
 
   .left-0-menu-total {
     margin-left: -83%;
@@ -718,6 +727,9 @@ h2 {
 
   .left-0-menu-total {
     margin-left: -71%;
+  }
+  .lista-desplegable-fav{
+    margin-right: 5rem;
   }
 
 }
