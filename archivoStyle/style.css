@@ -1494,4 +1494,41 @@ main {
     background-color: rgb(70, 70, 95);
   }
     /* ========cambios jair ============= */
+
+
+  /*   ====emmanuel cime======= */
+  /* Estilos Emmanuel Cime */
+
+.game-mode {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .game-mode img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  
+  .gameCard {
+    height: 950px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background-color: #f0f0f0;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4px
+  }
+  
+  .gameCard:hover {
+    transform: scale(1.1);
+  }
   
