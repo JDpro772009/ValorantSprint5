@@ -1,3 +1,6 @@
+
+import {menuDesp} from "./Apis.js"
+
 async function fetchGameModes() {
     try {
         const response = await fetch('https://valorant-api.com/v1/gamemodes')
@@ -42,3 +45,7 @@ function animateOnScroll(container) {
 }
 
 window.onload = fetchGameModes
+
+let boton = document.querySelector(".lista-desplegable")
+
+boton.addEventListener("click", menuDesp)

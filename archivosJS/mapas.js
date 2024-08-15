@@ -226,3 +226,10 @@ function cargarFavoritos() {
 
 cargarFavoritos();
 
+function desplegarFav(){
+    let caj = document.querySelector(".caj-fav")
+    caj.classList.toggle("margin-top-fav")
+}
+
+let botonFav = document.querySelector(".lista-desplegable-fav")
+botonFav.addEventListener("click", desplegarFav)
