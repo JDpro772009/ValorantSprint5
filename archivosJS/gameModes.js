@@ -87,7 +87,7 @@ window.onload = () => {
     fetchGameModes()
     document.getElementById('filterInput').addEventListener('input', filterGameModes)
 }
-=======
+
 window.onload = fetchGameModes
 
 let boton = document.querySelector(".lista-desplegable")
